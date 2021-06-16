@@ -18,12 +18,12 @@ class Resturant {
 
     private String name;
     
-    private String resturantType;
+    private String type;
 
     public Resturant(int resturantId, Location location, String name, String resturantType){
         this.resturantId = resturantId;
         this.location = location;
         this.name = name;
-        this.resturantType = resturantType;
+        this.type = type;
     } 
 }

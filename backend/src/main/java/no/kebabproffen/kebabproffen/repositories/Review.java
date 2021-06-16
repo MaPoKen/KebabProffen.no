@@ -21,20 +21,16 @@ class Review {
     @JoinColumn(name = "resturant_id")
     private Resturant resturant;
     
-    @OneToMany
-    private Set<Comment> comments;
-    
     private String title;
     
     private String review;
     
     private int rating;
 
-    public Review(UUID reviewId, User user, Resturant resturant, Set<Comment> comments, String review, String title, int rating){
+    public Review(UUID reviewId, User user, Resturant resturant, String review, String title, int rating){
         this.reviewId = reviewId;
         this.user = user;
         this.resturant = resturant;
-        this.comments = comments; 
         this.review = review;
         this.rating = rating;
     }
