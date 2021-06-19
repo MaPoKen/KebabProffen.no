@@ -1,6 +1,5 @@
 package no.kebabproffen.kebabproffen;
 
-import no.kebabproffen.kebabproffen.*;
 import javax.persistence.*;
 import java.time.LocalDateTime;  
 import java.util.*;
