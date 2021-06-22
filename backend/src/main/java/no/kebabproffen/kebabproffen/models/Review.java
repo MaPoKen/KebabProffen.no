@@ -17,8 +17,8 @@ class Review {
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "resturant_id")
-    private Resturant resturant;
+    @JoinColumn(name = "restaurant_id")
+    private Restaurant restaurant;
     
     private String title;
     
@@ -26,14 +26,55 @@ class Review {
     
     private int rating;
 
-    public Review(UUID reviewId, User user, Resturant resturant, String review, String title, int rating){
+    public Review(UUID reviewId, User user, Restaurant restaurant, String review, String title, int rating){
         this.reviewId = reviewId;
         this.user = user;
-        this.resturant = resturant;
+        this.restaurant = restaurant;
         this.review = review;
         this.rating = rating;
     }
 
+    public UUID getReviewId(){
+    	return reviewId;
+    }
     
+    public User getUser(){
+    	return user;
+    }
+    
+    public void setUser(User newUser){
+    	user = newUser;
+    }
+    
+    public Restaurant getRestaurant(){
+ 	   return restaurant;
+    }
+    
+    public void setRestaurant(Restaurant newRestaurant){
+ 	   restaurant = newRestaurant;
+    }
+    
+    public String getTitle(){
+    	return title;
+    }
 
+    public void setTitle(String newTitle){
+    	title = newTitle;
+    }
+    
+    public String getReview(){
+    	return review;
+    }
+
+    public void setReview(String newReview){
+    	review = newReview;
+    }
+
+    public int getRating(){
+    	return rating;
+    }
+    
+   public void setRating(int newRating){
+	   rating = newRating;
+   }
 }

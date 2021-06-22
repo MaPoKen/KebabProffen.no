@@ -1,4 +1,6 @@
-package no.kebabproffen.kebabproffen;
+package no.kebabproffen.kebabproffen;	
+
+import java.util.UUID;
 
 import javax.persistence.*;
 
@@ -28,5 +30,41 @@ class Location{
         this.city = city;
         this.country = country;
     }
+
+    public int getLocationId(){
+    	return locationId;
+    }
+    
+    public double getLongitude(){
+    	return longitude;
+    }
+    
+    public void setLongitude(double newLongitude){
+    	longitude = newLongitude;
+    }
+    
+    public double getLatitude(){
+    	return latitude;
+    }
+
+    public void setLatitude(double newLatitude){
+    	latitude = newLatitude;
+    }
+    
+    public String getCity(){
+    	return city;
+    }
+
+    public void setCity(String newCity){
+    	city = newCity;
+    }
+
+    public String getCountry(){
+    	return country;
+    }
+    
+   public void setCountry(String newCountry){
+	   country = newCountry;
+   }
 
 }
