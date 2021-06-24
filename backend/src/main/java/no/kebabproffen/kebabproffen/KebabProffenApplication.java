@@ -8,6 +8,7 @@ public class KebabProffenApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KebabProffenApplication.class, args);
+		System.out.println("....STARTED....");
 	}
 
 }
